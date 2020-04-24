@@ -1,96 +1,121 @@
-#Git commands
-##Frequently used commands
-`git init`
-`git add .`
-`git status`
-`git commit -m "msg"`
-stage and commit a tracked file
-`git commit -a -m "msg"`
-`git diff`
-`git diff --staged`
-`touch <filename>`
-`.gitignore`
+# Git commands
 
-##History
-commit history
+## Frequently used commands
+
+```git
+git init
+git add .
+git status
+git commit -m "msg"
+```
+
+Stage and commit a tracked file
+
+```git
+git commit -a -m "msg"
+git diff
+git diff --staged
+touch <filename>
+.gitignore
+```
+
+## History
+
+Commit history
 `git log`
-commit hostory with respect to a file
+Commit history with respect to a file
 `git log -- <filename>`
-commit history graph 
+Commit history graph
 `git log --all --decorate --oneline --graph`
-(OR)
 `alias graph = "git log --all --decorate --oneline --graph"`
 
-##Reverting back
-remove file in both working tree and staging area
+## Reverting back
+
+Remove file in both working tree and staging area
 `git rm <filename>`
-revert a change to the working tree
+Revert a change to the working tree
 `git checkout -- <filename>`
-revert a change to the staging area
+Revert a change to the staging area
 `git reset HEAD <filename>`
-restore a file to working tree and staging area from a previous git version
+Restore a file to working tree and staging area from a previous git version
 `git checkout <first 5 characters of commit ID> -- <filename>`
 
-##Branching
-create branch
+## Branching
+
+Create branch
 `git branch <branchname>`
-list branch
+List branch
 `git branch`
-work on a branch: HEAD->branchname
+Work on a branch: HEAD->branchname
 `git checkout <branchname>`
 create and checkout branch
 `git checkout -b <branchname>`
 
-##Merging
-Fast forward merge 
-git merge <branchname>
-3way merging with conflicts
-git merge --abort
+## Merging
 
-##Indicating what happens during merging
-git diff master..<branchname>
-##List merged branches
-git branch --merged
-##List local and remote repo
-git branch -a
-##List remote repo
-git branch -r
+##### Types of Merging
 
-##Deleting branches
-git branch -d <branchname>
+1. Fast forward merge
+2. 3-way merging with conflicts
+3. 3-way merging without conflicts
 
-##Detached HEAD state
-git checkout <first 5 characters of commit ID>
+`git merge <branchname>`
+`git merge --abort`
+Indicating what happens during merging
+`git diff master..<branchname>`
+List merged branches
+`git branch --merged`
+List local and remote repo
+`git branch -a`
+List remote repo
+`git branch -r`
 
-##Stashing
+## Deleting branches
+
+`git branch -d <branchname>`
+
+## Detached HEAD state
+
+`git checkout <first 5 characters of commit ID>`
+
+## Stashing
+
+```git
 git stash
 git stash save "message"
 git stash list -p
 git stash apply
 git stash apply <stash labelname>
 git stash pop
+```
 
-##Remote
-for default remote name (origin)
+## Remote
+
+Default alias for the Github repo is 'origin'
+
+```git
 git clone <URI>
 git remote add <remote name> <URI>
 git remote remove <remote name>
-
-##default alias for the Github repo is 'origin'
 git remote
 git remote -v
+```
 
-##Fetch or track latest changes at remote
-git fetch <remote name>
+##### Fetch or track latest changes at remote
 
-##merging origin/master to local
-`git merge origin/master
+`git fetch <remote name>`
 
-##combining fetch and merge
-`git pull
+##### Merging origin/master to local
 
-##pushing local to remote branch
-`git push origin <remotebranchname>
+`git merge origin/master`
+
+##### Combining fetch and merge
+
+`git pull`
+
+##### Pushing local to remote branch
+
+`git push origin <remotebranchname>`
 
 Fork
 Sync with remote repo
