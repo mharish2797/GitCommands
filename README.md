@@ -89,18 +89,16 @@ To update changes made in UI,
 **git fetch origin** -  updates origin locally with changes made in Github.
 <br/><br/>
 **git pull**<br/>
-```
+`
 Pull is a combination of both 'git fetch origin' and 'git merge origin/branch_name', but keeping them separate avoids unexpected merge results.
-```
+`
 <br/>
+
 When we are ahead of our remote github commits, we need to **push** our local changes to our repository.
-<br/><br/>
-**git push 'remote_branch_name' 'our_local_branch_name'** <br/>
+
+**git push 'remote_branch_name' 'our_local_branch_name'**
 Ex- git push origin master
-<br/><br/>
-**git remote add "alias" "url"** - Adds a new remote with the alias specified. 
-```
-We can use this when we fork a Github project, then clone it to our local machine and push changes to either our repository in Github(the forked one) or the actual one using the aliases.
-```
+
+**git remote add "alias" "url"** - Adds a new remote with the alias specified. ``` We can use this when we fork a Github project, then clone it to our local machine and push changes to either our repository in Github(the forked one) or the actual one using the aliases. ```
 
 
