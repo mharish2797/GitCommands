@@ -80,25 +80,27 @@ Ex- Our laptop can be remote with respect to GitHub.
 It can be anything with respect to our git repository.
 ```
 
-**git clone "github url"** - From the perspective of our system, GitHub is now our remote repository.  We can push and fetch from and to our repo. Default alias for our remote repo is **origin** .<br/>
-
-**git remote** - displays remotes . [-v] displays full locations.<br/>
-**git log** now shows us our local master branch and also our origin/master and origin/HEAD. <br/>
-Checking out to origin/master will result in a **detached Head** state.<br/>
-**git status** fails to fetch the changes made in Github website. <br/>
+**git clone "github url"** - From the perspective of our system, GitHub is now our remote repository.  We can push and fetch from and to our repo. Default alias for our remote repo is **origin** .<br/><br/>
+**git remote** - displays remotes . [-v] displays full locations.<br/><br/>
+**git log** now shows us our local master branch and also our origin/master and origin/HEAD. <br/><br/>
+Checking out to origin/master will result in a **detached Head** state.<br/><br/>
+**git status** fails to fetch the changes made in Github website. <br/><br/>
 To update changes made in UI, 
-**git fetch origin ** -  updates origin locally with changes made in Github.
-<br/>
-**git pull**
+**git fetch origin** -  updates origin locally with changes made in Github.
+<br/><br/>
+**git pull**<br/>
 ```
 Pull is a combination of both 'git fetch origin' and 'git merge origin/branch_name', but keeping them separate avoids unexpected merge results.
 ```
 <br/>
-When we are ahead of our remote github commits, we need to **push** our local changes to our repository.<br/>
-**git push 'remote_branch_name' 'our_local_branch_name'**
+When we are ahead of our remote github commits, we need to **push** our local changes to our repository.
+<br/><br/>
+**git push 'remote_branch_name' 'our_local_branch_name'** <br/>
 Ex- git push origin master
-<br/>
-**git remote add "alias" "url"** - Adds a new remote with the alias specified. We can use this when we fork a Github project, then clone it to our local machine and push changes to either our repository in Github(the forked one) or the actual one using the aliases.
-
+<br/><br/>
+**git remote add "alias" "url"** - Adds a new remote with the alias specified. 
+```
+We can use this when we fork a Github project, then clone it to our local machine and push changes to either our repository in Github(the forked one) or the actual one using the aliases.
+```
 
 
