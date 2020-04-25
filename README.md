@@ -99,6 +99,7 @@ When we are ahead of our remote github commits, we need to **push** our local ch
 **git push 'remote_branch_name' 'our_local_branch_name'**
 Ex- git push origin master
 
-**git remote add "alias" "url"** - Adds a new remote with the alias specified. ``` We can use this when we fork a Github project, then clone it to our local machine and push changes to either our repository in Github(the forked one) or the actual one using the aliases. ```
+**git remote add "alias" "url"** - Adds a new remote with the alias specified.<br/>
+``` We can use this when we fork a Github project, then clone it to our local machine and push changes to either our repository in Github(the forked one) or the actual one using the aliases. ```
 
 
