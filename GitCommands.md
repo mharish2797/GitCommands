@@ -22,7 +22,7 @@ Commit history with respect to a file<br>
 Commit history graph <br>
 ```git
 git log --all --decorate --oneline --graph
-alias graph = "git log --all --decorate --oneline --graph"
+alias graph="git log --all --decorate --oneline --graph"
 ```
 ## Reverting back
 Remove file in both working tree and staging area<br>
